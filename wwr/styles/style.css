@@ -33,8 +33,9 @@ nav a {
     text-decoration: none;
     color: white;
     padding: 35px;
-    
+
 }
+
 nav a:hover {
     background-color: #93A8AC;
     color: #424B54;
@@ -55,7 +56,8 @@ main section img {
     box-sizing: border-box;
 }
 
-.book, .join {
+.book,
+.join {
     background-color: #424B54;
     color: white;
     text-decoration: none;
@@ -65,12 +67,14 @@ main section img {
     border-radius: 5px;
 }
 
-.book:hover, .join:hover {
+.book:hover,
+.join:hover {
     background-color: #93A8AC;
     color: #424B54;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1,
+#hero-msg h4 {
     text-align: center;
 }
 
@@ -78,7 +82,9 @@ main section img {
     width: 100%;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
     margin: 200px 0;
 }
 
@@ -93,7 +99,8 @@ main section img {
 
 .msg h2 {
     color: #424B54;
-} 
+}
+
 .msg p {
     color: #424B54;
     font-size: 0.8em;
