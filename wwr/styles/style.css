@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 .home-title {
-    color: #93A8AC;
+    color: white;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 2em;
     margin-top: 10px;
@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 #hero-msg h4 {
-    color: white;   
+    color: white;
 }
 
 h4 {
@@ -87,7 +87,8 @@ main section img {
     box-sizing: border-box;
 }
 
-.book, .join {
+.book,
+.join {
     background-color: #424B54;
     color: white;
     text-decoration: none;
@@ -97,12 +98,14 @@ main section img {
     border-radius: 5px;
 }
 
-.book:hover, .join:hover {
+.book:hover,
+.join:hover {
     background-color: #93A8AC;
     color: #424B54;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1,
+#hero-msg h4 {
     text-align: center;
 }
 
@@ -110,12 +113,55 @@ main section img {
     width: 100%;
 }
 
+/* Added for grand canyon page */
+#hero-img-GC {
+    width: 100%;
+    border-bottom: 13px #424B54 solid;
+}
+
+#info-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#oar-divider {
+    grid-column: 1/4;
+    width: 100%;
+}
+
+#divider-content {
+    display: flex;
+    grid-column: 2/3;
+    border: 15px #424B54 solid;
+    padding: 25px;
+    background-color: #93A8AC;
+}
+
+#divider-logo {
+    float: left;
+    border: 15px #424B54 solid;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+}
+
+#divider-purpose {
+    padding: 5%;
+    text-align: center;
+    color: #424B54;
+}
+
+
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
     margin: 200px 0;
 }
 
@@ -145,8 +191,10 @@ main section img {
     transform: scale(1.1);
 }
 
-.card-img, .mountains {
+.card-img,
+.mountains {
     width: 100%;
+    height: 65%;
 }
 
 .mountains {
@@ -237,42 +285,58 @@ footer .social img {
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+
+    #hero,
+    .home-grid {
         display: block;
         height: auto;
     }
-    nav, footer {
+
+    nav,
+    footer {
         flex-direction: column;
     }
+
     nav a {
         display: block;
         padding: 15px;
     }
+
     #hero {
         margin-top: 0;
     }
+
     #hero-msg {
         margin-top: 0;
     }
+
     #hero-msg h4 {
         display: none;
     }
+
     .home-title {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
         margin: 50px auto;
         width: 60%;
     }
+
     #background {
         display: none;
     }
-    .mountains, .msg {
+
+    .mountains,
+    .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
     }
+
     footer {
         margin-top: 25px;
     }
