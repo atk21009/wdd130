@@ -1,10 +1,21 @@
+/* IMPORTS AND VARIABLES */
+/* -------------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@500&display=swap');
+
+
 
 /* Temp for other pages */
 img {
     height: 100px;
     width: 100px;
 }
+
+
+
+
+/* HEADER */
+/* -------------------------------------------------------------------*/
 
 
 body {
@@ -56,33 +67,9 @@ li a:hover {
     color: #f4e158;
 }
 
-.img img {
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    width: 100%;
-    height: auto;
-}
+/* footer */
+/* -------------------------------------------------------------------*/
 
-.content {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.containter {
-    width: 60%;
-    background-color: #f4e158;
-    margin: 100px;
-    border: 15px #001a37 solid;
-    font-size: large;
-}
-
-.containter img {
-    float: left;
-    padding-right: 20px;
-    height: 200px;
-    width: 200px;
-}
 
 footer {
     background-color: #001a37;
@@ -118,7 +105,206 @@ footer .social img {
 
 
 
+/* Home page */
+/* -------------------------------------------------------------------*/
 
+
+
+.img img {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.containter {
+    width: 60%;
+    background-color: #f4e158;
+    margin: 100px;
+    border: 15px #001a37 solid;
+    font-size: large;
+}
+
+.containter img {
+    float: left;
+    padding-right: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* Basics page */
+/* -------------------------------------------------------------------*/
+
+
+/* intro */
+
+.intro {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 500px;
+}
+
+#berries {
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    border-radius: 50%;
+    border: 25px #001a37 solid;
+    margin: 100px;
+}
+
+.intro-content {
+    width: 100%;
+    height: 350px;
+    justify-self: center;
+    padding: 100px;
+
+}
+
+.intro-conent-p {
+    height: auto;
+    width: auto;
+    padding: 30px;
+    background-color: #f4e158;
+    border: 25px #001a37 solid;
+    border-radius: 15%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro-content p {
+    height: auto;
+    width: 100%;
+    color: #001a37;
+    font-size: larger;
+    margin: 0;
+    text-align: center;
+}
+
+#cake {
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    border-radius: 50%;
+    border: 25px #001a37 solid;
+    margin: auto;
+}
+
+
+
+
+
+
+/* basics */
+#basics_content {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    border-top: #001a37 100px solid;
+}
+
+.tab {
+    background-color: #A8A6A6;
+    width: 30%;
+    height: 600px;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #001a37;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 1px#979797 solid;
+}
+
+.tab button:hover {
+    background-color: #A8A6A6;
+}
+
+.tab button.active {
+    background-color: #001a37;
+    color: #d1d1d1;
+}
+
+.tabcontent {
+    float: left;
+    width: 100%;
+    border-left: none;
+    height: 600px;
+}
+
+.tabconent_container {
+    width: 100%;
+    background-color: #001a37;
+    color: #d1d1d1;
+}
+
+#basics_content h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    float: center;
+    font-size: 40px;
+}
+
+#basics_content p {
+    width: 70%;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px #d1d1d1 solid;
+    align-self: center;
+    font-size: 18px;
+}
+
+
+
+#gl_container {
+    background-color: #001a37;
+    color: #f4e158;
+    border: 0;
+}
+
+#gm_container {
+    background-color: #001a37;
+    color: #f4e158;
+    border: 0;
+}
+
+#bd_container {
+    background-color: #001a37;
+    color: #f4e158;
+    border: 0;
+}
+
+
+
+/* Tools page */
+/* -------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* screan */
 
 @media screen and (max-width: 900px) {
 
