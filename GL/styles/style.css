@@ -297,7 +297,198 @@ footer .social img {
 
 /* Tools page */
 /* -------------------------------------------------------------------*/
+.tools {
+    display: flex;
+    flex-direction: column;
+}
 
+/* Calorie calculator */
+
+.cal-calculator {
+    height: 400px;
+    width: 70%;
+    background-color: #001a37;
+    margin: 50px;
+    padding: 25px;
+}
+
+.cal-calculator form {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    height: 40px;
+    font-size: 20px;
+    background-color: #d1d1d1;
+    color: #001a37;
+    font-weight: 600;
+}
+
+.cal-calculator h1 {
+    grid-area: 1 / 3 / 2 / 6;
+    color: #f4e158;
+}
+
+
+#age-label {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#age {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+#height-label {
+    grid-area: 3 / 1 / 4 / 2;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#height {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#height-in {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
+#weight-label {
+    grid-area: 4 / 1 / 5 / 2;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#weight {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+#male-label {
+    grid-area: 2 / 5 / 3 / 6;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#male {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+#female-label {
+    grid-area: 3 / 5 / 4 / 6;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#female {
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+.dropdown {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+#activity {
+    height: 40px;
+    background-color: #f4e158;
+    color: #001a37;
+    font-size: 20px;
+    font-weight: 600;
+}
+option {
+    font-weight: 600;
+}
+
+#submit {
+    grid-area: 7 / 4 / 8 / 5;
+}
+#reset {
+    grid-area: 7 / 5 / 8 / 6;
+}
+#cal-results {
+  grid-area: 7 / 6 / 8 / 7;
+  color: #f4e158;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+/* BMI calculator */
+.bmi-calculator {
+    width: 70%;
+    height: 300px;
+    background-color: #001a37;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+
+
+.bmi-calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+.bmi-calculator h1 {
+    grid-area: 1 / 3 / 2 / 6;
+    color: #f4e158;
+    padding: none;
+}
+#bmi-height-label {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+#bmi-height {
+    grid-area: 2 / 3 / 3 / 4;
+}
+#bmi-weight-label {
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+#bmi-weight {
+    grid-area: 3 / 3 / 4 / 4;
+}
+#bmi-submit {
+    grid-area: 2 / 5 / 3 / 6;
+}
+#bmi-reset {
+    grid-area: 3 / 5 / 4 / 6;
+}
+#bmi-results {
+    grid-area: 5 / 3 / 6 / 6;
+}
+
+
+.info {
+    width: 50%;
+    background-color: aqua;
+}
 
 
 
